@@ -1,0 +1,31 @@
+/*Fiqma page sttyle*/
+article img{
+    margin:0 1.5em 1.5em 0;
+    box-shadow:0 0 3px 2px black;
+    border:.5em groove #fff;
+    
+  }
+  body{ 
+    margin:auto; 
+    background:#ddd; 
+    text-shadow:0 .8px #111;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+  
+  }
+  article {
+    border:.1em outset #aac !important; 
+    border-radius:1em !important; 
+    box-shadow:0 0 13px #000 !important;
+    align-items: center;
+    
+  }
+  header span.glyphicon{
+    color:#DDD;
+    text-shadow:2px 2px #111 !important;
+    filter:blur(2px);-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  
+  } /*Note that the blur() Effect is not supported as css3 in FFGecko and IEX*/
