@@ -1,0 +1,37 @@
+body{
+    background-image: url(../assets/qaada.jpg);   
+    background-size:1500px 800px;
+}
+
+
+table{
+    border:1px solid black;
+    border-collapse:collapse ;
+    padding:0px;
+    margin-left: 10%;
+    width: 100%;
+    margin-top: -3%;
+}
+
+th{
+    padding:10px;
+    border:1px solid black;
+
+	
+}
+
+td{
+    padding:10px;
+     border:1px solid black;
+	text-align:left;
+}
+
+tr:nth-child(even)
+{
+      background-color:white;
+}
+
+tr:nth-child(odd)
+{
+      background-color:#eee;
+}
