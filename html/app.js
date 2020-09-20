@@ -8,3 +8,17 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
+
+
+//Qaada image
+
+$(function(){
+
+  $('#show').on('click',function(){        
+      $('.card-reveal').slideToggle('slow');
+  });
+  
+  $('.card-reveal .close').on('click',function(){
+      $('.card-reveal').slideToggle('slow');
+  });
+});

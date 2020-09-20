@@ -55,3 +55,61 @@ nav > .nav.nav-tabs{
     height: auto;
     background-image: url("./assets/mablo.png");
   }
+
+  /*Image*/
+  img{
+width:100%;
+margin-left: 50%;
+    
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 100px;
+    height: 100%;
+	width: 100%;
+    padding-top:40px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 100px;
+    height: 100%;
+	width: 100%;
+    padding-top:100px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+
+
+.img-space{
+    margin:20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width:100%;
+   
+            
+        }
+    
+  }
