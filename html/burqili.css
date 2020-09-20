@@ -10,7 +10,8 @@ table{
     padding:0px;
     margin-left: 10%;
     width: 100%;
-    margin-top: -3%;
+    margin-top: -20.1%;
+    align-content: center;
 }
 
 th{
@@ -43,6 +44,6 @@ tr:nth-child(odd)
         padding:0px;
         margin-left: 5%;
         width: 100%;
-        margin-top: -15%;
+        margin-top: -61.2%;
     }
   }
