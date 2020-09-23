@@ -10,7 +10,7 @@ table{
     padding:0px;
     margin-left: 10%;
     width: 100%;
-    margin-top: -20.1%;
+    margin-top: -28.1%;
     align-content: center;
 }
 
@@ -44,7 +44,7 @@ tr:nth-child(odd)
         padding:0px;
         margin-left: 2%;
         width: 100%;
-        margin-top: -61.2%;
+        margin-top: -93.6%;
     }
   }
 
@@ -69,4 +69,7 @@ label{ cursor:pointer; display:inline-block; transition:1s ease; }
 
 article{ width:40%; margin:0 auto; color:#444; }
 header{ background:#D51B52; height:50px; color: #fff; }
-footer{ background:#000; color:#fff; }
+footer{ background:#000; 
+    color:#fff; 
+    
+}
