@@ -73,3 +73,7 @@ var documentosRef = firebase.database().ref('documentos');
 
         carregaDocumentos();
     }
+
+
+    //home page
+    
