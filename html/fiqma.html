@@ -1,167 +1,130 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Old+Standard+TT:ital,wght@0,700;1,400&family=PT+Serif:ital,wght@1,700&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Qafar Fiqma</title>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <title>Qaada  gadda</title>
+    <!--Navbar-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Fiqma artcile-->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="fiqma.css">
-  </head>
-<body> 
-<nav>
-    <a href="./index.html"><div class="logo">
-    Qafâr | Qaadâ</div></a>  <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i></label>
-    <ul>
-    <li><a class="active" href="../index.html">Home</a></li>
-    <li><a href="./madqa.html">Madqâ</a></li>
-    <li><a href="./fiqma.html">Qaada Gadda</a></li>
-    <!-- <li><a href="#">Gabâ gaaxu</a></li> -->
-    <li><a href="#">Qadar/Dorro</a></li>
-    <li><a href="#">Qadar/Dorro</a></li>
-    </ul>
-    </nav>
-<div class="row">
-    <div class="col-md-4" >
-        <ul class="list-group nav" role="tablist">
-            <li class="list-group-item">
-                <a href="muggaqinu.html" data-toggle="tab" aria-controls="seite2" role="tab" >
-                    Muggaaqinnu,  Farankaqtu, Aliginnu & Onqoru 
-                </a>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fiqma.css">
+</head>
+<body style="background-color: #333533;">
+    <nav class="main-navigation">
+        <div class="navbar-header animated fadeInUp">
+            <a class="navbar-brand" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="./index.html" class="nav-link">Home</a>
             </li>
-
-            <li class="list-group-item">
-                <a href="./afficinna-qala.html" data-toggle="tab" aria-controls="seite2" role="tab" >
-                    Affeecinna, Qibnaytino, Caraya, Qalla Ixbonta, Kura
-                </a>
+            <li class="nav-list-item">
+                <a href="./madqa.html" class="nav-link">Madqa</a>
             </li>
-            
-            <li class="list-group-item">
-                <a href="./dariifa.html" data-toggle="tab" aria-controls="seite2" role="tab" >
-                    Dariifa kee Dariifa kee dubaali Dacayro
-                </a>
+            <li class="nav-list-item">
+                <a href="./fiqma.html" class="nav-link">Qaadâ Gadda</a>
             </li>
-
-            <li class="list-group-item">
-                <a href="./dawoowi.html" data-toggle="tab" aria-controls="seite2" role="tab" >
-                    Qafarak qaadâ daylih ixxiga
-                </a>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Works</a>
             </li>
-
-            <li class="list-group-item">
-                <a href="./diritte.html" data-toggle="tab" aria-controls="seite2" role="tab" >
-                    Qafarak qaada digiritte
-                </a>
+            <li class="nav-list-item">
+                <a href="#" class="nav-link">Contact</a>
             </li>
         </ul>
-    </div>
-    <div class="col-md-8 tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="seite1">
-            <article class="panel panel-default">
-                <header class="panel-heading">
-                    <h1 class="text-muted text-center"><span class="glyphicon glyphicon-pencil"></span>Fiqma kak yaanam macaay?</h1>
-                </header>
-                    <div class="panel-body">
-                    
-                       <figure class="pull-left "><img class="img-responsive img-rounded" alt="image" src="../assets/fiqma.png"/>
-                           <figcaption class="text-center"><strong> <span style="color: red;">Fiqma</span></strong></figcaption>
-                        </figure> 
-                            <p>Fiqma kak yaanam karma kee nado rakiiboh leh tan xisne kinni. <br> 
-                                Kulli hora kee awda isi fiqma lem kinnuk qaadâ xiinissoh siirah addat
-                                maggoh abnitte aban.
-                                Kulli awdal qunxaaneytaay, furrayna kee sayyoh
-                                fiqma tan.<br>
-                                Baxsaluk qunxaaneyti fiqma ayyunti addah madqa kee
-                                eddexinta dacrisoonu kee ayyunti adoytit madqak iro akah akkewaan
-                                innah kaxxa doori digranam kee ayyunta ariiqô taamal yayfaafen.<br>
-                                Kulli fiqmah butta/egla/ isinni fiqmât abba le. <br>Fiqmat abbah dooranam gersi
-                                adoytiitik karmah nabaah digga leh yan num kinnuk dooro fiqmah
-                                adoytiitih gabat takke. <br>
-                                Fiqmah adoytiitik karma gufak gexxek, furrayniinô karma gaba keenik
-                                kaltek kasleh fiqma yakkeenim fanah tartan. <br>Keenik sarra kataytah tan
-                                hora ken arac raaqissa. Fiqmah adoytiitik karma gufak gexxek, furrayniinô karma gaba keenik
-                                kaltek kasleh fiqma yakkeenim fanah tartan. <br>Keenik sarra kataytah tan
-                                hora ken arac raaqissa.<br>
-                                Qaadâ xiinissoh siiral poolis hinnay saay dacrisah
-                                yableenim qunxaaneyti fiqmah buttaati kinni.Fiqmah abba adoytit qellat
-                                bahteh tenek weelo kee agrat akah digaaliman innah abaamih qaaqa
-                                le. <br>Baxaabaxsale ayyuntiinoh caagiida tenek ayyunta ariiqoh catan. <br>Isinnik
-                                isinnih sitta catan,sittallih abaanam faxxintam ittaluk aban,qokol faxa
-                                mara qoklan. <br>Fiqmah abbobti tannah tan ayyuntiino kee binaadamiinoh</p>
-                            <hr/>
-                            <p> kedoha abbobti kee makaabon madqah mammirtinna ittah tan sinam
-                                abbaxuk xayyoysaanam fiqmah abba le kabuuk abanam kee fiqmah
-                                abba adoytit kobaahissak kaal amriseenim abnisa.
-                                Adoytit fanat qellat kee baatilitte abak taqbisah yan mara,garaaqa, qeebi abah yan maraay,
-                                umaane ugsah yan maraay,baatileynit, ayyunti saalam kee nagayniina
-                                baysaah w.w tan maritte fiqmah abba isih agrat kah digaaliman innah
-                                keenik aba. <br>Qellat fayya iyyaah qagaagitak yekkek wadaraay,illi,laa hinnay
-                                gaala keenil haak akah diggalsiman innah abaanam duddah.Digaalat
-                                gabat agle haysitteh tan fiqmah adoytit sittalluk edde xoqoysimta.<br>
-                                Qaadah tan anfakaakaq/dagar digga/ digiritte gexsittah tan
-                                waqdi,qunxaaneyta digirih gulgulussaah kobaahissam qunxaaneyti
-                                fiqmah abbobti. <br>Awayih uddur raaaqak geytemtam takkay immay
-                                qaadah dagar diggah qalaylitte kedoh adda kee kedoodah fanat gexsitak
-                                sugtem oyta tacayo baxxaqisse.Qalayli kedoodah fanat gexsittek fiqmah
-                                adoytit digir acaral/booxal geytimak sinni butta qokolaanam keenik
-                                qambaltimta.<br>
-                                Ceelalloh;Koqoso/cayla/ kedoodah fanat gexsittah tan wakti
-                                yanim kinnuk ta qalayli kaxxa hangi akah yacen digir kinniimih taagah,
-                                fiqmah adoytit digir booxal geytimak qokol sinaamah yaceenim
-                                faxxinta. <br>Amri cinna hayteh raqteh tan fiqmah adoytit, fiqmat abba
-                                
-                                digaalam duddah.
-                                Fiqmah abbah amri sinnim, hebeltô num kedoodah
-                                fanat qalayli gexsam/ gexsaanam maduudan.<br>
-                                Sayyoh fiqma tonnah isi fiqmah abba le.<br>
-                                Sayyoh fiqmah abba tan barra adoytit fanat maqar le fantaaxaw akah yan innah, digib kee kalah tan
-                               ayyuntiinoh caagiida tenek lakqo kee ariiqoh sitta kah qikan innah
-                                kobaahissa.<br>
-                                Adoytit fanat bood ginniimek taqabi saayah akah yafdigen
-                                innah fiqma le kabuki absiisan.<br>
-                                Qellat bahaah, taqbisaah, amri oggole
-                                waytah tan adoytiitil maaqatta beyaanamih mixxaaginna lon.<br>
-                                Gibdaabinat yanih yan marah cato akah aban innah adoytit
-                                kobaahisan.
-                            </p>
-                    </div>
-    <footer class="panel-footer clearfix "><address class="pull-right">Raceenâ | Qafar Rakaakayak Qaada kee Waqaysir kutbeh buxa</footer>
-</div>
-<div role="tabpanel" class="tab-pane fade" id="seite2">
-            <article class="panel panel-default">
-                <header class="panel-heading">
-                    <h1 class="text-muted text-center"><span class="glyphicon glyphicon-pencil"></span> Headline no.2</h1>
-                </header>
-                    <div class="panel-body">
-                    
-                       <figure class="pull-left "><img class="img-responsive img-rounded" alt="image" src="http://www.placehold.it/200.png/ddd"/>
-                           <figcaption class="text-center"><strong>One fine caption</strong></figcaption>
-                        </figure> 
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <hr/>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
-                    </div>
-    <footer class="panel-footer clearfix "><address class="pull-right">Written by me at <time>10:00 am</time></address></footer>
-</div>
-        </article>
-    </div>
-</div>
-</div>
+    </nav>
+
+    <!--contet body-->
+    <div class='container' style="color: BLACK; font-size: 16px;">
+        <div id='content' class='row-fluid'>
+        <div class='span2 sidebar'>
+            <h3>Baxaa baxsa le qaadoodi</h3>
+            <ul class="nav nav-tabs nav-stacked">
+              <li><a href='./muggaqinu.html' style="color: royalblue;">Muggaaqinnu,  Farankaqtu, Aliginnu & Onqoru</a></li>
+              <li><a href='./afficinna-qala.html' style="color: royalblue;">Affeecinna, Qibnaytino, Caraya, Qalla Ixbonta, Kura</a></li>
+              <li><a href='./dariifa.html' style="color: royalblue;">Dariifa kee Dariifa kee dubaali Dacayro</a></li>
+              <li><a href='./dawoowi.html' style="color: royalblue;">Qafarak qaadâ daylih ixxiga</a></li>
+              <li><a href='./diritte.html' style="color: royalblue;"> Qafarak qaada digiritte</a></li>
+
+            </ul>
+          </div>
+          <div class='span8 main'>
+            <h2><span style="color: red; margin-left: 40%; font-size: 22px;"> Fiqma</span></h2>
+                                    Fiqma kak yaanam karma kee nado rakiiboh leh tan xisne kinni. <br> 
+                                    Kulli hora kee awda isi fiqma lem kinnuk qaadâ xiinissoh siirah addat
+                                    maggoh abnitte aban.
+                                    Kulli awdal qunxaaneytaay, furrayna kee sayyoh
+                                    fiqma tan.<br>
+                                    Baxsaluk qunxaaneyti fiqma ayyunti addah madqa kee
+                                    eddexinta dacrisoonu kee ayyunti adoytit madqak iro akah akkewaan
+                                    innah kaxxa doori digranam kee ayyunta ariiqô taamal yayfaafen.<br>
+                                    Kulli fiqmah butta/egla/ isinni fiqmât abba le. <br>Fiqmat abbah dooranam gersi
+                                    adoytiitik karmah nabaah digga leh yan num kinnuk dooro fiqmah
+                                    adoytiitih gabat takke. <br>
+                                    Fiqmah adoytiitik karma gufak gexxek, furrayniinô karma gaba keenik
+                                    kaltek kasleh fiqma yakkeenim fanah tartan. <br>Keenik sarra kataytah tan
+                                    hora ken arac raaqissa. Fiqmah adoytiitik karma gufak gexxek, furrayniinô karma gaba keenik
+                                    kaltek kasleh fiqma yakkeenim fanah tartan. <br>Keenik sarra kataytah tan
+                                    hora ken arac raaqissa.<br>
+                                    Qaadâ xiinissoh siiral poolis hinnay saay dacrisah
+                                    yableenim qunxaaneyti fiqmah buttaati kinni.Fiqmah abba adoytit qellat
+                                    bahteh tenek weelo kee agrat akah digaaliman innah abaamih qaaqa
+                                    le. <br>Baxaabaxsale ayyuntiinoh caagiida tenek ayyunta ariiqoh catan. <br>Isinnik
+                                    isinnih sitta catan,sittallih abaanam faxxintam ittaluk aban,qokol faxa
+                                    mara qoklan. <br>Fiqmah abbobti tannah tan ayyuntiino kee binaadamiinoh</p>
+                                <hr/> 
+    
+                                <p> kedoha abbobti kee makaabon madqah mammirtinna ittah tan sinam
+                                    abbaxuk xayyoysaanam fiqmah abba le kabuuk abanam kee fiqmah
+                                    abba adoytit kobaahissak kaal amriseenim abnisa.
+                                    Adoytit fanat qellat kee baatilitte abak taqbisah yan mara,garaaqa, qeebi abah yan maraay,
+                                    umaane ugsah yan maraay,baatileynit, ayyunti saalam kee nagayniina
+                                    baysaah w.w tan maritte fiqmah abba isih agrat kah digaaliman innah
+                                    keenik aba. <br>Qellat fayya iyyaah qagaagitak yekkek wadaraay,illi,laa hinnay
+                                    gaala keenil haak akah diggalsiman innah abaanam duddah.Digaalat
+                                    gabat agle haysitteh tan fiqmah adoytit sittalluk edde xoqoysimta.<br>
+                                    Qaadah tan anfakaakaq/dagar digga/ digiritte gexsittah tan
+                                    waqdi,qunxaaneyta digirih gulgulussaah kobaahissam qunxaaneyti
+                                    fiqmah abbobti. <br>Awayih uddur raaaqak geytemtam takkay immay
+                                    qaadah dagar diggah qalaylitte kedoh adda kee kedoodah fanat gexsitak
+                                    sugtem oyta tacayo baxxaqisse.Qalayli kedoodah fanat gexsittek fiqmah
+                                    adoytit digir acaral/booxal geytimak sinni butta qokolaanam keenik
+                                    qambaltimta.<br>
+                                    Ceelalloh;Koqoso/cayla/ kedoodah fanat gexsittah tan wakti
+                                    yanim kinnuk ta qalayli kaxxa hangi akah yacen digir kinniimih taagah,
+                                    fiqmah adoytit digir booxal geytimak qokol sinaamah yaceenim
+                                    faxxinta. <br>Amri cinna hayteh raqteh tan fiqmah adoytit, fiqmat abba
+                                    
+                                    digaalam duddah.
+                                    Fiqmah abbah amri sinnim, hebeltô num kedoodah
+                                    fanat qalayli gexsam/ gexsaanam maduudan.<br>
+                                    Sayyoh fiqma tonnah isi fiqmah abba le.<br>
+                                    Sayyoh fiqmah abba tan barra adoytit fanat maqar le fantaaxaw akah yan innah, digib kee kalah tan
+                                    ayyuntiinoh caagiida tenek lakqo kee ariiqoh sitta kah qikan innah
+                                    kobaahissa.<br>
+                                    Adoytit fanat bood ginniimek taqabi saayah akah yafdigen
+                                    innah fiqma le kabuki absiisan.<br>
+                                    Qellat bahaah, taqbisaah, amri oggole
+                                    waytah tan adoytiitil maaqatta beyaanamih mixxaaginna lon.<br>
+                                    Gibdaabinat yanih yan marah cato akah aban innah adoytit
+                                    kobaahisan.
+                                </p>
+          </div>
+          <!-- <div class='span2 sidebar'>
+            <h3>Right Sidebar</h3>
+            <ul class="nav nav-tabs nav-stacked">
+              <li><a href='#'>Another Link 1</a></li>
+              <li><a href='#'>Another Link 2</a></li>
+              <li><a href='#'>Another Link 3</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
 </body>
 </html>
-
-
-
-
-
-
-
