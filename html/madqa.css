@@ -1,115 +1,56 @@
-
-.container {
-    margin-top: 1%;
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
-nav > .nav.nav-tabs{
-
-    border: none;
-      color:#fff;
-      background:#272e38;
-      border-radius:0;
-  
-  }
-  nav > div a.nav-item.nav-link,
-  nav > div a.nav-item.nav-link.active
-  {
-    border: none;
-      padding: 18px 25px;
-      color:#fff;
-      background:#272e38;
-      border-radius:0;
-  }
-  
-  nav > div a.nav-item.nav-link.active:after
-   {
-    content: "";
-    position: relative;
-    bottom: -60px;
-    left: -10%;
-    border: 15px solid transparent;
-    border-top-color: #e74c3c ;
-  }
-  .tab-content{
-    background: #fdfdfd;
-      line-height: 25px;
-      border: 1px solid #ddd;
-      border-top:5px solid #e74c3c;
-      border-bottom:5px solid #e74c3c;
-      padding:30px 25px;
-  }
-  
-  nav > div a.nav-item.nav-link:hover,
-  nav > div a.nav-item.nav-link:focus
-  {
-    border: none;
-      background: #e74c3c;
-      color:#fff;
-      border-radius:0;
-      transition:background 0.20s linear;
-  }
-
-  /*Background Image*/
-
-  img {
-    width: 100%;
-    height: auto;
-    background-image: url("./assets/mablo.png");
-  }
-
-  /*Image*/
-  img{
-width:100%;
-margin-left: 50%;
-    
+body {
+    padding-top: 100px;
+    background-color: #ced4da;
+}
+footer {
+    padding: 30px 0;
 }
 
-.overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 100px;
-    height: 100%;
-	width: 100%;
-    padding-top:40px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    transition: all 1s ease;
+/*
+ * Custom styles
+ */
+.navbar-brand {
+    font-size: 24px;
 }
 
-.overlay2{
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 100px;
-    height: 100%;
-	width: 100%;
-    padding-top:100px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    transition: all 1s ease;
+.navbar-container {
+    padding: 20px 0 20px 0;
 }
 
-
-
-.img-space{
-    margin:20px 0px;
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #ced4da;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
 }
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
 
 @media only screen and (max-width: 600px) {
-    img{
-        width:100%;
-   
-            
-        }
-    
+  #sidebar {
+    width: 100%;
   }
+}

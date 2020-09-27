@@ -6,10 +6,11 @@
     <title>Responsive Navigation Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--Navbar-->
-   <!--Navbar-->
    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+   <!--madqa-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="madqa.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -42,14 +43,7 @@
         </div>
       </div>
     </header>
-    <div class="container side-collapse-container">
-      <div class="row">
-        <h1>Hello</h1>
-        <p>This is a side opening nav demonstration</p>
-        <p>Make your browser smaller and the top menu wil become into a lateral slider menu</p>
-      </div>
-    </div>
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-xs-12 ">
       <nav>
@@ -65,7 +59,52 @@
   </div>
 </div>
 </div>
-</div>
+</div> -->
+
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-12 col-sm-9">
+          <div class="jumbotron">
+              <h1 class="ariciba" style="color: #006d77;">Arcibay Samma xica</h1>
+              <p>4 takke Qafar madqooqik digaala barittam maay faxxaah? yeey itteek elle geytu dudda araca. Takkel geytimta 4 madqooqi 3 aamol makaabon kee Qaadah abbobti sitta elle geyak kutbeh heeniih, Qafar rakaakayak Qaadâ kutbeh buxa bicisse kutbek geyne.</p>
+          </div>
+          <!-- <div class="row">
+              <div class="col-xs-6 col-lg-4">
+                  <h2>Heading</h2>
+                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              </div>
+            
+          </div> -->
+      </div>
+
+      <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+              <a href="#" class="list-group-item active" style="font-size: 26px; width: 100%; align-content: center;">Madqooqi</a>
+              <a href="./Burqili.html" class="list-group-item" style="font-size: 20px; color: #5390d9;">Burqili Madqa</a>
+              <a href="./afkiqek.html" class="list-group-item" style="font-size: 20px; color: #5390d9;">Afkiqek Maqadih Madqa</a>
+              <a href="./buxxuto.html" class="list-group-item" style="font-size: 20px; color: #5390d9;">buxxutô baxih Madqa</a>
+              <a href="./badoyta.html" class="list-group-item" style="font-size: 20px; color: #5390d9;">Badoytâ meelah madqak dagar meklaali</a>
+              <!-- <a href="#" class="list-group-item">Link</a>
+              <a href="#" class="list-group-item">Link</a>
+              <a href="#" class="list-group-item">Link</a>
+              <a href="#" class="list-group-item">Link</a>
+              <a href="#" class="list-group-item">Link</a> -->
+          </div>
+      </div><!--/.sidebar-offcanvas-->
+  </div><!--/row-->
+
+  <hr>
+
+  <hr>
+
+<footer class="footers" style="margin-left: 3%; margin-top: 16px;">
+    <p>©2020 <a href="https://www.facebook.com/akkuibnafarAkadar"> Akader Ibrahim/ Akku  | </a>A madqooqik Raceenâ Qafar Rakkaakayih doolatak Qaadâ kutbeh buxa</p>
+</footer>
+
+</div><!--/.container-->
  <script>
    //navbar
 $(document).ready(function() {   
@@ -76,6 +115,87 @@ $(document).ready(function() {
         $(sel).toggleClass('in');
         $(sel2).toggleClass('out');
     });
+});
+
+
+//madqa links
+$(document).ready(function(){
+
+/**
+ * This object controls the nav bar. Implement the add and remove
+ * action over the elements of the nav bar that we want to change.
+ *
+ * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
+ */
+var myNavBar = {
+
+    flagAdd: true,
+
+    elements: [],
+
+    init: function (elements) {
+        this.elements = elements;
+    },
+
+    add : function() {
+        if(this.flagAdd) {
+            for(var i=0; i < this.elements.length; i++) {
+                document.getElementById(this.elements[i]).className += " fixed-theme";
+            }
+            this.flagAdd = false;
+        }
+    },
+
+    remove: function() {
+        for(var i=0; i < this.elements.length; i++) {
+            document.getElementById(this.elements[i]).className =
+                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+        }
+        this.flagAdd = true;
+    }
+
+};
+
+/**
+ * Init the object. Pass the object the array of elements
+ * that we want to change when the scroll goes down
+ */
+myNavBar.init(  [
+    "header",
+    "header-container",
+    "brand"
+]);
+
+/**
+ * Function that manage the direction
+ * of the scroll
+ */
+function offSetManager(){
+
+    var yOffset = 0;
+    var currYOffSet = window.pageYOffset;
+
+    if(yOffset < currYOffSet) {
+        myNavBar.add();
+    }
+    else if(currYOffSet == yOffset){
+        myNavBar.remove();
+    }
+
+}
+
+/**
+ * bind to the document scroll detection
+ */
+window.onscroll = function(e) {
+    offSetManager();
+}
+
+/**
+ * We have to do a first detectation of offset because the page
+ * could be load with scroll down set.
+ */
+offSetManager();
 });
  </script>
 </body>

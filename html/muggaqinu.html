@@ -5,39 +5,45 @@
     <meta charset="utf-8">
     <title>Qafar | Fiqmâ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--Navbar-->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Navbar-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
-   
     <link rel="stylesheet" href="aliginna.css">
   </head>
-
   <body>
-    <nav class="main-navigation">
+    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-header animated fadeInUp">
-            <a class="navbar-brand" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
+          <a class="navbar-brand" style="font-size: 28px;" href="">Qafar | Qaadâ</a>
+      </div>
+        <div class="container">
+          <div class="navbar-header">
+            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="navbar-inverse side-collapse in" style="float: right;">
+            <nav role="navigation" class="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./madqa.html">Madqâ</a></li>
+                <li><a href="./fiqma.html">Qaadâ Gadda</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="http://placesforlove.com">Places</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <ul class="nav-list">
-            <li class="nav-list-item">
-                <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="./madqa.html" class="nav-link">Madqa</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="./fiqma.html" class="nav-link">Qaadâ Gadda</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Works</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    
-    </nav>
+      </header>
+      <div class="collapse-container" style="margin-top: 4%;margin-left: 3%;">
+        <div class="row">
+          <h1><strong>Arcibay samma xica</strong></h1>
+          <p>This is a side opening nav demonstration</p>
+          <p>Make your browser smaller and the top menu wil become into a lateral slider menu</p>
+        </div>
+      </div>
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-body">
@@ -143,5 +149,17 @@
         </div>
     </div>
 </div>
+<script>
+    //navbar
+$(document).ready(function() {   
+    var sideslider = $('[data-toggle=collapse-side]');
+    var sel = sideslider.attr('data-target');
+    var sel2 = sideslider.attr('data-target-2');
+    sideslider.click(function(event){
+        $(sel).toggleClass('in');
+        $(sel2).toggleClass('out');
+    });
+}); 
+</script>
 </body>
 </html>

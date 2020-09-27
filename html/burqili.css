@@ -1,6 +1,7 @@
 body{
-    background-image: url(../assets/qaada.jpg);   
+    background-color: #f5f3f4;   
     background-size:1500px 800px;
+    box-shadow: 10px 10px 5px #f5f3f4;
 }
 
 
@@ -73,4 +74,14 @@ footer{
     color: white;
     text-align: center;
     height: 80px;
+ }
+
+ 
+ .footers {
+    box-shadow: 5px 5px 15px 5px #000000;
+    
+ }
+
+ .footers p {
+     margin-left: 6%;
  }
