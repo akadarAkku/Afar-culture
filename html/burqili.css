@@ -11,9 +11,23 @@ table{
     padding:0px;
     margin-left: 10%;
     width: 100%;
-    margin-top: -24.6%;
+    margin-top: -20.6%;
     align-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    table{
+        border-collapse:collapse ;
+        padding:0px;
+        margin-left: 13%;
+        width: 100%;
+        position: absolute;
+        top: 46%;
+        right: 6%;
+        
+    }
+    
+  }
 
 th{
     padding:10px;
@@ -47,6 +61,12 @@ tr:nth-child(odd)
         width: 100%;
         margin-top: -78%;
     }
+
+    .footers {
+      display: none;
+
+        
+     }
   }
 
   
@@ -65,16 +85,6 @@ footer{
 }
 
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 80px;
- }
 
  
  .footers {

@@ -8,6 +8,11 @@ h1 {
   .brand-pills > li > a {
       border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+  
+  }
+
+  .sidebar{
+    background-color: aqua;
   }
   
   li.brand-nav.active a:after{
