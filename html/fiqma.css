@@ -30,3 +30,9 @@ h1 {
     z-index: 2;
   }
 }
+
+.btn-group {
+  margin-top: 4% !important;
+  margin-left: 16% !important;
+  width: 30% !important;
+}

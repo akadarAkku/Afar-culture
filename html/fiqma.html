@@ -5,62 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qaada  gadda</title>
      <!--Navbar-->
-     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!--Fiqma artcile-->
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fiqma.css">
 </head>
 <body style="background-color: #dad7cd;">
-  <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
-    <div class="navbar-header animated fadeInUp">
-      <a class="navbar-brand" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
-  </div>
-    <div class="container">
-      <div class="navbar-header">
-        <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      </div>
-      <div class="navbar-inverse side-collapse in" style="float: right;">
-        <nav role="navigation" class="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./madqa.html">Madqâ</a></li>
-            <li><a href="./fiqma.html">Qaadâ Gadda</a></li>
-            <li><a href="./audio.html">Qadar kee Dorro</a></li>
-            <li><a href="#users">Users</a></li>
-            <li><a href="#users">Users</a></li>
-            <li><a href="#users">Users</a></li>
-            <li><a href="http://placesforlove.com">Places</a></li>
-          </ul>
-        </nav>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./madqa.html">Madqâ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./fiqma.html">Qaadâ Gadda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./audio.html">Qadar / Dorro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gaali Saare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gabâ Gaaxu</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
+    </ul>
+
+</nav>
   <div class="container side-collapse-container">
   </div>
 
 
     <!--contet body-->
-    <div class='container' style="color: BLACK; font-size: 16px;">
-        <div id='content' class='row-fluid'>
-        <div class='span2 sidebar' style="background-color: #e5e5e5; text-align: center; box-shadow: 5px 5px 15px 5px #8a817c; margin-top: 12%;">
-            <h3>Qaadâ Gadditte</h3>
-            <ul class="nav nav-tabs nav-stacked">
-              <li><a href='./muggaqinu.html' style="color: royalblue;">Muggaaqinnu,  Farankaqtu, Aliginnu & Onqoru</a></li>
-              <li><a href='./afficinna-qala.html' style="color: royalblue;">Affeecinna, Qibnaytino, Caraya, Qalla Ixbonta, Kura</a></li>
-              <li><a href='./dariifa.html' style="color: royalblue;">Dariifa kee Dariifa kee dubaali Dacayro</a></li>
-              <li><a href='./dawoowi.html' style="color: royalblue;">Qafarak qaadâ daylih ixxiga</a></li>
-              <li><a href='./diritte.html' style="color: royalblue;"> Qafarak qaada digiritte</a></li>
-              <li><a href='./diritte.html' style="color: royalblue;"> Gaali Saare</a></li>
 
-            </ul>
-          </div>
-          <div class='span8 main' style="margin-top: 6%; font-family: 'Peddana', serif; font-size: 28px;">
+    <div class="btn-group ">
+      <button type="button ml-auto" class="btn btn-danger bg-info">Qaadâ Gadda</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only bg-info">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item text-primary" href="./muggaqinu.html">Muggaaqinnu,  Farankaqtu, Aliginnu & Onqoru</a>
+        <a class="dropdown-item text-primary" href="./afficinna-qala.html">Affeecinna, Qibnaytino, Caraya, Qalla Ixbonta, Kura</a>
+        <a class="dropdown-item text-primary" href="./dariifa.html">Dariifa kee Dariifa kee dubaali Dacayro</a>
+        <a class="dropdown-item text-primary" href="./dawoowi.html">Qafarak qaadâ daylih ixxiga</a>
+        <a class="dropdown-item text-primary" href="./digritte.html">Qafarak qaada digiritte</a>
+        <a class="dropdown-item text-primary" href="./gaalisare.html">Gaali Saare</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+                       <!--Fiqma Article-->
+          <div class='span8 main' style="margin-top: 6%; font-family: 'Peddana', serif; font-size: 28px; margin-left: 2% !important;">
             <h2><span style="color: red; margin-left: 40%; font-size: 40px;"> Fiqma</span></h2>
                                     Fiqma kak yaanam karma kee nado rakiiboh leh tan xisne kinni. <br> 
                                     Kulli hora kee awda isi fiqma lem kinnuk qaadâ xiinissoh siirah addat
@@ -133,22 +138,22 @@
         </div>
       </div>
 
-    <script>
-      //navbar
-$(document).ready(function() {   
-            var sideslider = $('[data-toggle=collapse-side]');
-            var sel = sideslider.attr('data-target');
-            var sel2 = sideslider.attr('data-target-2');
-            sideslider.click(function(event){
-                $(sel).toggleClass('in');
-                $(sel2).toggleClass('out');
-            });
-        });
-    </script>
-    <hr>
+      <hr>
+      <div class="card text-center bg-info">
+        <div class="card-header">
+          ©2020 Qafar | Qaadâ All Rights Reserved
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Tah Qafar qaadâ wagitta haytaamak dudnem elle gaabosne guug kinni.</h5>
+          <p class="card-text">Takkel geytoonu waytan Qafar madqooqi kee kalah tan sissin qaadâ gadditte kak geynem Qafar rakaakayih doolatak Qaada kee wacaysir kutbeh buxa kinnim naysixxige</p>
+        </div>
+        <div class="card-footer text-white">
+          by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
+        </div>
+      </div>
 
-    <footer class="footers">
-        <p style="margin-left: 3%; margin-top: 26px;">©2020 <a href="https://www.facebook.com/akkuibnafarAkadar"> Akader Ibrahim/ Akku  | </a>A kutbek Raceenâ Qafar Rakkaakayih doolatak Qaadâ kutbeh buxa</p>
-    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
