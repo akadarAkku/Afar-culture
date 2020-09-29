@@ -4,63 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qadar/Dorro</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   <!--Navbar-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="audio.css">
-    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-header animated fadeInUp">
-          <a class="navbar-brand" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
-      </div>
-        <div class="container">
-          <div class="navbar-header">
-            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          </div>
-          <div class="navbar-inverse side-collapse in" style="float: right;">
-            <nav role="navigation" class="navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./madqa.html">Madqa</a></li>
-                <li><a href="./fiqma.html">Qaad Gaadda</a></li>
-                <li><a href="./audio.html">Qadar/ Dorro</a></li>
-                <li><a href="#users">Users</a></li>
-                <li><a href="#users">Users</a></li>
-                <li><a href="#users">Users</a></li>
-                <li><a href="http://placesforlove.com">Places</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./madqa.html">Madqâ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./culture.html">Qaadâ Gadda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./audio.html">Qadar / Dorro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gaali Saare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gabâ Gaaxu</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    </ul>
+
+</nav>
    
 
-    <h1>Qadar kee Dorro</h3>
+<figure id="audioplayer" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
+  <figcaption>
+  <div id="artist">Xayyossam<span itemprop="byArtist">Macammad Gaddaqay</span></div>
+  <div id="time">wakti<span id="playbacktime">00:00</span></div>
+  </figcaption>
+  <meta itemprop="duration" content="PT2M29S">
+  <div id="fader"></div>
+  <div id="playback"></div>
+  <audio controls src="../assets/dooqa.mp3" id="audiotrack" preload="auto" itemprop="audio"></audio>
+  </figure>
 
-<div style="width:80%; max-width:600px;">
-<audio preload="auto" controls>
-<source src="../assets/yinay-yibaxoy.mp3">
-<source src="../assets/dooqa.mp3">
-<source src="https://sites.google.com/site/mindfulnessovningar/mindfulness-oevningar/Andnings%20vning.mp3">
-</audio>
-</div>
-<p style="margin-top: 10%; margin-left: 10%;"><i>Förberedelse för Onlineutbildning i Mindfulness.<br>Övningen laddas från Google Sites</i></p>
+  <!--Audio 2-->
+  <figure id="audioplayer" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
+    <figcaption>
+    <div id="artist">Xayyossam<span itemprop="byArtist">Macammad Gaddaqay</span></div>
+    <div id="time">wakti<span id="playbacktime">00:00</span></div>
+    </figcaption>
+    <meta itemprop="duration" content="PT2M29S">
+    <div id="fader"></div>
+    <div id="playback"></div>
+    <audio controls src="../assets/dooqa.mp3" id="audiotrack" preload="auto" itemprop="audio"></audio>
+    </figure>
 
-<!--doooqa-->
-<h1 style="margin-top: 10%; margin-left: 10%;">Qadar kee Dorro</h3>
-
-    <div style="width:80%; max-width:600px;">
-    <audio preload="auto" controls>
-    <source src="../assets/dooqa.mp3">
-    <source src="../assets/dooqa.mp3">
-    <source src="https://sites.google.com/site/mindfulnessovningar/mindfulness-oevningar/Andnings%20vning.mp3">
-    </audio>
-    </div>
-    <p><i>Förberedelse för Onlineutbildning i Mindfulness.<br>Övningen laddas från Google Sites</i></p>
+     <!--Audio 2-->
+  <figure id="audioplayer" itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
+    <figcaption>
+    <div id="artist">Xayyossam<span itemprop="byArtist">Macammad Gaddaqay</span></div>
+    <div id="time">wakti<span id="playbacktime">00:00</span></div>
+    </figcaption>
+    <meta itemprop="duration" content="PT2M29S">
+    <div id="fader"></div>
+    <div id="playback"></div>
+    <audio controls src="../assets/dooqa.mp3" id="audiotrack" preload="auto" itemprop="audio"></audio>
+    </figure>
     
 
 <script src="./audio.js"></script>
+
+
+<!--footer-->
+<hr>
+<div class="card text-center bg-info" style="font-family: 'Libre Baskerville', serif !important; text-align: center;">
+  <div class="card-header">
+    ©2020 Qafar | Qaadâ All Rights Reserved
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Tah Qafar qaadâ wagitta haytaamak dudnem elle gaabosne guug kinni.</h5>
+    <p class="card-text">Takkel geytoonu waytan Qafar madqooqi kee kalah tan sissin qaadâ gadditte kak geynem Qafar rakaakayih doolatak Qaada kee wacaysir kutbeh buxa kinnim naysixxige</p>
+  </div>
+  <div class="card-footer text-white">
+    by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
+  </div>
+</div>
 </body>
 </html>

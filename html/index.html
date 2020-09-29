@@ -6,6 +6,11 @@
     <title>Qafar | Qaadâ</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!--Navbar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -21,13 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="./madqa.html">Madqâ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./fiqma.html">Qaadâ Gadda</a>
+          <a class="nav-link text-white" href="./culture.html">Qaadâ Gadda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="./audio.html">Qadar / Dorro</a>
@@ -44,109 +49,71 @@
     </ul>
 
 </nav>
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-<!--     <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(http://cs412624.vk.me/v412624691/4117/RWBNZL6CLtU.jpg)"></div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(http://cs412624.vk.me/v412624691/41ad/atM6w55Z9Xg.jpg)"></div>
-    </div> -->
-    <div class="swiper-slide">
-      <div class="slide-inner">
-        <img src="../assets/labha.png">
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(../assets/qaada.jpg)"></div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner">
-         <img src="../assets/sayo.png">
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner">
-        <img src="../assets/xabuxxa.png">
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slide-inner" style="background-image:url(../assets/fiqma.png)"></div>
-    </div>
-  </div>
-  <div class="swiper-button-next swiper-button-white"></div>
-  <div class="swiper-button-prev swiper-button-white"></div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-<script>
-  var interleaveOffset = 0.5;
+<section class="details-card">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                    <a href="./madqa.html">  <img src="../assets/mablo.jpg" alt="Afar-cultre image" style="height: 200px;">
+                      <span><h1 class="h3" style="margin-left: 20% !important; color: #000;">Qafar Maqooqi</h1></span></a>
+                  </div>
+                  <div class="card-desc">
+                      <p>Qafar abuuy akaakayyuh edde xiinak sugteeh uxih edde xintah tan qaadâ madqooqiy fereey takke takkel getton.</p>
+                          <a href="./madqa.html" class="btn-card" style="color: #00509d !important;">Addâfakoot</a>   
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                 <a href="./culture.html"><img src="../assets/sayo.png" alt="afar girls photo" style="height: 200px;"></a> 
 
-  var swiperOptions = {
-    loop: true,
-    speed: 1000,
-    grabCursor: true,
-    autoplay: true,
-    watchSlidesProgress: true,
-    mousewheelControl: true,
-    keyboardControl: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    on: {
-      progress: function() {
-        var swiper = this;
-        for (var i = 0; i < swiper.slides.length; i++) {
-          var slideProgress = swiper.slides[i].progress;
-          var innerOffset = swiper.width * interleaveOffset;
-          var innerTranslate = slideProgress * innerOffset;
-          swiper.slides[i].querySelector(".slide-inner").style.transform =
-            "translate3d(" + innerTranslate + "px, 0, 0)";
-        }      
-      },
-      touchStart: function() {
-        var swiper = this;
-        for (var i = 0; i < swiper.slides.length; i++) {
-          swiper.slides[i].style.transition = "";
-        }
-      },
-      setTransition: function(speed) {
-        var swiper = this;
-        for (var i = 0; i < swiper.slides.length; i++) {
-          swiper.slides[i].style.transition = speed + "ms";
-          swiper.slides[i].querySelector(".slide-inner").style.transition =
-            speed + "ms";
-        }
-      }
-    }
-  };
-  
-  var swiper = new Swiper(".swiper-container", swiperOptions);
-//navbar
-$(document).ready(function() {   
-    var sideslider = $('[data-toggle=collapse-side]');
-    var sel = sideslider.attr('data-target');
-    var sel2 = sideslider.attr('data-target-2');
-    sideslider.click(function(event){
-        $(sel).toggleClass('in');
-        $(sel2).toggleClass('out');
-    });
-}); 
-</script> 
+                      <span><h1 style="margin-left: 20% !important; color: #000;">Qafarak sissin Qaadâ</h1></span>
+                  </div>
+                  <div class="card-desc">
+                      <p style="margin-left: 3%;">Ambaxe sinni Qafar Qaada kee abuk raqtiiy baxaa baxsa le takkel getton.</p>
+                          <a href="./culture.html" class="btn-card" style="color: #00509d !important;">Addâfakoot</a></a> 
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                    <a href="./audio.html">  <img src="../assets/gile.png" alt="Afar nife" style="height: 200px;"></a>
+                      <span><h1 style="margin-left: 3%;">Qadar kee Dorro</h1></span>
+                  </div>
+                  <div class="card-desc">
+                      <p>Qafar elle tamixxigeemik tiyak teenah tanim Qadar/ dorr kee kassow kinni.
+                        Toh wagitta haytaamak geyya haynam anayah takku kutbeh takku takkel siinih getton.
+                      </p>
+                          <a href="#" class="btn-card" style="color: #00509d !important;">Addâfakoot</a>   
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- details card section starts from here -->
+
+<!--footer-->
 <hr>
-<div class="card text-center bg-info">
+<div class="card text-center bg-info" style="font-family: 'Libre Baskerville', serif !important; text-align: center;">
   <div class="card-header">
     ©2020 Qafar | Qaadâ All Rights Reserved
   </div>
   <div class="card-body">
-    <h5 class="card-title">Tah Qafar qaadâ wagitta haytaamak dudnem elle gaabosne guug kinni.</h5>
-    <p class="card-text">Takkel geytoonu waytan Qafar madqooqi kee kalah tan sissin qaadâ gadditte kak geynem Qafar rakaakayih doolatak Qaada kee wacaysir kutbeh buxa kinnim naysixxige</p>
+    <p class="card-text" style="text-align:inherit;"> Tah Qafar qaadâ wagitta haytaamak dudnem elle gaabosne guug kinni.<br> Takkel geytoonu waytan Qafar madqooqi kee kalah tan sissin qaadâ gadditte kak geynem Qafar rakaakayih doolatak <br>Qaada kee wacaysir kutbeh buxa kinnim naysixxige</p>
   </div>
   <div class="card-footer text-white">
     by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
   </div>
 </div>
+<!---home div-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+<!--Navbar-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

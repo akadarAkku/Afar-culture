@@ -10,6 +10,8 @@ h1 {
     border-bottom-right-radius: 0px;
   
   }
+  
+  
 
   .sidebar{
     background-color: aqua;
@@ -32,7 +34,11 @@ h1 {
 }
 
 .btn-group {
-  margin-top: 4% !important;
-  margin-left: 16% !important;
-  width: 30% !important;
+  margin-top: 2% !important;
+  margin-left: 1% !important;
+  width: 80% !important;
+}
+
+.img-fluid{
+  margin-top: 4%!important;
 }
