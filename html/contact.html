@@ -4,23 +4,22 @@
   <head>
     <meta charset="utf-8">
     <title>Qafar | Qaadâ</title>
-    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!--Navbar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="about.css">
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,14 +28,16 @@
      <div id="lang_sel_list" class="lang_sel_list_horizontal">
       <ul>
       <li class="icl-en" style="list-style: none;">
-      <a class="lang_sel_sel"  href="./About.html">Afar</a>
+      <a class="lang_sel_sel"  href="./contact.html">Afar</a>
       </li>
       <li class="icl-tt" style="list-style: none;">
-      <a class="lang_sel_other" href="../Amharic/about.html"> አማረኛ </a>
+      <a class="lang_sel_other" href="../Amharic/contact.html"> አማረኛ </a>
       </li>
       </ul>
       </div>
-
+  
+    
+<!--Nav links-->
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto" style="margin-right: 16% !important;">
         <li class="nav-item active">
@@ -49,7 +50,7 @@
           <a class="nav-link text-white" href="./culture.html">Qaadâ Gadda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./culture.html">Nee wagsisaak</a>
+          <a class="nav-link text-white" href="./About.html">Nee wagsisaak</a>
         </li>
       </ul>
     </div>
@@ -57,36 +58,63 @@
     </ul>
 </nav>
 
-<!--About us-->
-<div class="aboutus-area">
-  <div class="container">
-      <div class="row">
-          <div class="col-xs-12">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">    
-              <div class="aboutus-image float-left hidden-sm"><img src="../assets/akku.jpg" alt="profile image" style="border-radius: 80%; height: 250px; margin-left: 6%;"></div>
-              </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="aboutus-content" style="margin-top: 6%;">
-                  <h2><p><span>Ta Qafar Qaada deqsita web bicissem: </span></p>
-                    Akader Ibrahim/<span>Akku</span></h2>
-                    <hr>
-                  
-                  <p style="text-align: left;">Takkel geyya haytan Qafar Qaadak manggo gaba axcih ugut Qafar rakaakayak Qaadâ kee wacaysir kutbeh buxa Xaysseh tan kitab kinnuk naharaak ikoytiinu keenih kuuxaah,  qagitaak annah tan taamat taqabba iyyeh yan marah inkih Qafar migaaqal gadda gacsa.</p>
-                  <p>Tohuuk lakal ta web/ guub wagittaamah tu gactek Qafarak Qaada inkih akah naaxigennah baar leeh, manggih kaaduk bayak geytimtam tamixxige.<br> Bayak geytimta axce waqdi le mari tet gorrise weeh daanise week yamaatu waa horal tabtu madudda.
-                  Tohuk gexaak innih dudda haamal gersi mari abah yan taama teknoloji caddol kaaduk kah gactannah abaanamih gabbatu abam.
-                Sarrah kaaduk dubuh ninni af hinnay aki marih afat haak tet baarisnam nek faxxiimelem aamine.</p>
-                  <hr>
-                  <p>Faxe qaynatih tû mabul takku anni yayse inta mala telleenik Email gitaak: <span style="color: blue;">akadar.akku121@gmail.com</span>  axcuk yoh rubtaanam duddaanah.</p>
-                  <div class="counter ">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
-                      </div>
-                  </div>
-                  
-              </div>
-          </div>    
-          </div>
-      </div>
-  </div>
+<!--home page-->
+
+<div class="container">
+    <h2 class="text-center">Farmoh formi</h2>
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8 col-lg-6 pb-5">
+
+
+                    <!--Form with header-->
+
+                    <form action="mail.php" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Ayyufta</h3>
+                                    <p class="m-0">Akkel neh ruuba</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+         </div>
+	</div>
 </div>
 
 <!--footer-->
@@ -102,9 +130,9 @@
     by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
   </div>
 </div>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+<!---home div-->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Navbar-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
