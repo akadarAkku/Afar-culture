@@ -195,4 +195,8 @@ background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199
 
 .footer { padding-top: 100px;  margin: 50px; }
 
-/*language*/
+/*animation*/
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
