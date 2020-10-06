@@ -22,3 +22,8 @@ $(function(){
       $('.card-reveal').slideToggle('slow');
   });
 });
+
+
+//tex animation
+
+

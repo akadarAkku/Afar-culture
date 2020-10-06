@@ -1,0 +1,76 @@
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+.lang {
+  display: inline-block;
+  text-align: left;
+}
+
+.lang a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lang__list,
+.lang__option {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.lang__chevron {
+  display: none;
+}
+
+.js .lang {
+  border: solid 1px black;
+  min-width: 4rem;
+  position: relative;
+}
+
+.js .lang__list,
+.js .lang__option {
+  display: block;
+}
+
+.js .lang__chevron {
+  display: inline-block;
+  float: right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.js .lang__option {
+  padding: 0.5rem;
+}
+
+.js .lang__option:hover, .js .lang__option:focus {
+  background-color: white;
+}
+
+.js .lang__list {
+  display: none;
+  list-style-type: none;
+}
+
+.js .is-open {
+  border-bottom: none;
+}
+
+.js .is-open .lang__list {
+  border: solid 1px;
+  border-top: none;
+  display: block;
+  position: absolute;
+  left: -1px;
+  width: 100%;
+}
+
+.js .is-open .lang__chevron {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+/*# sourceMappingURL=language.css.map */
