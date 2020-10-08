@@ -1,0 +1,425 @@
+body{
+    background-color: #2a9d8f;
+}
+
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../assets/qaada.jpg); 
+}
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+//@color-1: #fa356c; //pink
+//@color-2: #1abc9c; //green
+//@color-3: #F19154; //orange
+
+@color-1: #d4305e;
+@color-3: #466677; //dark blue
+//@color-2: #45baa8; //green
+//@color-3: #e6b04c; //somewhat yellox
+@color-2: #e79122;
+
+/*------------- general architecture --------- */
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 105%; //so that the box-shadow begins at the beginning
+  height: 5em;
+  margin: 0;
+  //background-color: #eee;
+  background-color: @color-3;
+  box-shadow: -5px 5px 10px #333;
+  position: fixed;
+  z-index: 100;
+}
+
+.section{
+  width: 100%;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.content{
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+.title{
+  color: white;
+  background-color: white;
+  padding: 8px;
+  width: 200px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  transform: skew(160deg);
+  font-weight: bold;
+}
+
+.title div{
+  transform: skew(-160deg);
+  text-align: center;
+}
+
+#title1{
+  color: @color-2;
+  //color: @color-1;
+}
+
+#title2{
+  color: @color-3;
+  //color: @color-2;
+}
+
+#title3{
+  background-color: white;
+  color: @color-1;
+}
+
+
+/* ---------------------------------------*/
+/*------------- navigation menu --------- */
+/* ---------------------------------------*/
+nav a{
+  text-decoration: none;
+  color: #eee;
+  margin: 12px 10px 10px 10px;
+  padding: 8px;
+  background-color: @color-3;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+nav a:hover{
+  background-color: #eee;
+  color: @color-3;
+}
+
+/* --------------------------------------------*/
+/*------------- about me section (1) --------- */
+/* --------------------------------------------*/
+
+#section1{
+  background-color: @color-1;
+  padding-top: 120px;
+  min-height: 90vh; //not 100 because of the nav menu
+}
+
+#presentation{
+  color: white;
+  margin-top: 40px;
+  height: 60vh;
+  display: flex;
+  flex-wrap: no wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#presentation-tag{
+  min-width: 350px;
+  height: 206px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  z-index: 20; // so it's under the portrait
+}
+
+#portrait{
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 200px;
+  height: 200px;
+  margin: 0px -98px 0px 0px;
+  z-index: 30; //so that it's on top of presentation-tag
+}
+
+#presentation-text{
+  color: #aaa;
+  position: relative;
+  margin: 15px 20px 10px 120px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#intro{
+  color: @color-1;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* --------------------------------------------*/
+/*------------- like section (2) ------------- */
+/* --------------------------------------------*/
+
+#section2{
+  background-color: white;
+  min-height: 300px;
+}
+
+#amorce {
+  font-size: 3em;
+  //text-align: center;
+  padding-left: 5%;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+#like-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.like{
+  margin: 12px 10px 10px 10px;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  background-color: @color-1;
+  border-radius: 50%;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.like:hover{
+  cursor: default;
+}
+
+/* ------------------------------------------*/
+/*------------- portfolio section (3) ------ */
+/* ------------------------------------------*/
+
+#section3{
+  background-color: @color-2;
+  min-height: 100vh;
+}
+
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.example{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  margin: 0px 20px 30px 10px;
+  padding: 5px;
+  width: 400px;
+  height: 390px;
+}
+
+.example img{
+  width:98%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+/* ------------------------------------------*/
+/*------------- use section (4) ------------ */
+/* ------------------------------------------*/
+
+#section4{
+  background-color: white;
+  min-height: 500px;
+}
+
+#use {
+  font-size: 3em;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+#tool-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tool{
+  margin: 12px 8px 5px 8px;
+  padding: 8px 12px;
+  background-color: @color-2;
+  border-radius: 5px;
+  color: white;
+}
+
+.tool:before{
+  font-family: "FontAwesome";
+  content: "\f111";
+  color: white;
+  font-size: 0.2em;
+  vertical-align: middle;
+  margin-right: 7px;
+  opacity: 0.6;
+}
+
+.tool:after{
+  font-family: "FontAwesome";
+  content: "\f111";
+  color: white;
+  font-size: 0.2em;
+  vertical-align: middle;
+  margin-left: 7px;
+  opacity: 0.6;
+}
+
+/* ------------------------------------------*/
+/*---------- social media section (5)------- */
+/* ------------------------------------------*/
+
+#section5{
+  background-color: @color-3;
+  min-height: 300px;
+}
+
+#social-link-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.social-link{
+  margin: 10px;
+  padding: 8px 8px 10px 8px;
+  width: 40px;
+  height: 40px;
+  background-color: @color-3;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.social-link:hover{
+  border-color: @color-3;
+  background-color: white;
+  color: @color-3;
+}

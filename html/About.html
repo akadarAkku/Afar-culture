@@ -1,54 +1,181 @@
-<html>
-<head>
-    <title>HTML5 Audio Player</title>
-	<link rel="stylesheet" href="audio.css">
-</head>
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>የአፋር ባሕል</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="main.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
+  </head>
 <body>
-	<div id="container">
-		<div id="audio-image">
-			<img class="cover">
-		</div>
-		<div id="audio-player">
-			<div id="audio-info">
-				<span class="artist"></span> - <span class="title"></span>
-			</div>
-			<input id="volume" type="range" min="0" max="10" value="4">
-			<br>
-			<div id="buttons">
-				<span>
-					<button id="prev"></button>
-					<button id="play"></button>
-					<button id="pause"></button>
-					<button id="stop"></button>
-					<button id="next"></button>
-				</span>
-			</div>
-			<div class="clearfix"></div>
-			<div id="tracker">
-				<div id="progress-bar">
-					<span id="progress"></span>
-				</div>
-				<span id="duration"></span>
-			</div>
-			<div class="clearfix"></div>
-			<ul id="playlist" class="hidden">
-				<li class="active" song="Linkin Park - Papercut.mp3" cover="cover1.jpg" artist="Linkin Park">Papercut.mp3</li>
-				<li song="Linkin Park - One Step Closer.mp3" cover="cover1.jpg" artist="Linkin Park">One Step Closer.mp3</li>
-				<li song="Linkin Park - With You.mp3" cover="cover1.jpg" artist="Linkin Park">With You.mp3</li>
-				<li song="Linkin Park - Points Of Authority.mp3" cover="cover1.jpg" artist="Linkin Park">Points Of Authority.mp3</li>
-				<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling.mp3</li>
-				<li song="Linkin Park - Runaway.mp3" cover="cover1.jpg" artist="Linkin Park">Runaway.mp3</li>
-				<li song="Linkin Park - By Myself.mp3" cover="cover1.jpg" artist="Linkin Park">By Myself.mp3</li>
-				<li song="Linkin Park - In The End.mp3" cover="cover1.jpg" artist="Linkin Park">In The End.mp3</li>
-				<li song="Linkin Park - A Place For My Head.mp3" cover="cover1.jpg" artist="Linkin Park">A Place For My Head.mp3</li>
-				<li song="Linkin Park - Forgotten.mp3" cover="cover1.jpg" artist="Linkin Park">Forgotten.mp3</li>
-				<li song="Linkin Park - Cure For The Itch.mp3" cover="cover1.jpg" artist="Linkin Park">Cure For The Itch.mp3</li>
-				<li song="Linkin Park - Pushing Me Away.mp3" cover="cover1.jpg" artist="Linkin Park">Pushing Me Away.mp3</li>
-			</ul>
-		</div>
+ <!--Navbar-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">የአፋር ባሕል</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <!--Language-->
+ <div id="lang_sel_list" class="lang_sel_list_horizontal">
+	<ul>
+	<li class="icl-en" style="list-style: none;">
+	<a class="lang_sel_sel"  href="../html/About.html">Qafar Af</a>
+	</li>
+	<li class="icl-tt" style="list-style: none;">
+	<a class="lang_sel_other" href="../Amharic/about.html"> አማረኛ </a>
+	</li>
+	</ul>
+	</div>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link text-white" href="./index.html">Ugtuma <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link text-white" href="./madqa.html">Madqâ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link text-white" href="./culture.html">Qaadâ Gadda</a>
+		  </li>
+		  <li class="nav-item">
+            <a class="nav-link text-white" href="./contac.html">Neh uktuba</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./Gaalisare.html">Gaali saare</a>
+          </li>
+		</ul>
+	  </div>
+	</nav>
+	  </ul>
+  </nav>
+  
+<!--About us-->
+<div class="aboutus-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">    
+              <div class="aboutus-image float-left hidden-sm"><img src="../assets/akku.jpg" alt="profile image" style="border-radius: 80%; height: 250px; margin-left: 20%;"></div>
+              </div>
+
+              
+          <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="aboutus-content" style="margin-top: 6%;">
+
+                  <h2><p><span>A web/ Guub Bicissem </span></p>
+                    Akadar Ibraahimi<span>/ Akku </span></h2>
+					<hr>
+
+                  <p>	Ta weebil/ gabbeelol geytimma inta Qafar Qaada wagitta oytittek manggo gaba Axcih Ugtuma tekkem Qafar rakaakayih doolatak Qaada kee wacaysir kutbeh buxa kusaq kak abak gaabosseh ten Qafarak Qaadâ gadda kee madqooqi teknoloji caddol kaadok manggo mara akah taafennah abaanama. tohuk gexaak keenih gadda gacsaaah, ikoytuunu keenih kak kauuxa.
+					Toohuk bisol ta web dudda haynaamal ayrooy tu edde osisak bisoh ninni qaada naharak ninnih naaxigeeh sarrak gersi mara barisnaamih taama niyat le web kinni.
+                  <hr>
+                  <p>Faxe qaynatih tû mabul takkuu anni yayse inta mala email gitaak  <span style="color: blue;"> akadar.akku121@gmail.com</span>rubtaanam duddaanah.</p>
+                  <div class="counter ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
+                      </div>
+                  </div>
+              </div>
+          </div>    
+          </div>
+      </div>
+  </div>
+</div>
+<!--Social media-->
+<div class="container">
+  <h2>Yoo kataata</h2>
+<div class="row">
+  
+  <ul class="social-icons-ql">
+ <li><a href="https://www.facebook.com/akkuibnafarAkadar/"><i class="fa fa-facebook"></i></a></li>
+ <li><a href="https://twitter.com/AafarAkku"><i class="fa fa-twitter"></i></a></li>
+ <li><a href="https://www.linkedin.com/in/akader-ibrahim-akku-70469295/"><i class="fa fa-linkedin"></i></a></li>
+ </ul>
+</div>
+</div>
+
+<hr>
+<!--especial thanks-->
+<h1 style="color: #03071e; margin-left: 16%; font-family: 'David Libre', serif;">Baxsa le gadda akah gacsam:</h1>
+<div class="container">
+	<div class="row">
+	
+	<!--team-1-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="../Amharic/img/habibi.jpg" style="height: 100px;" class="img-fluid" />
+	<h3>Cabiib Macammad Casan</h3>
+	<p>Qaada gadda kee daaran dacayroh dayrekteri tonnah kaaduk Aydaadi kusaq abe.</p>
 	</div>
 	
-	<script src="js/jquery.js"></script>
-	<script src="audio.js"></script>
+	<div class="team-back">
+	<span>
+		Gifta Cabiib Macammad Casan Takkel geytimma inta Qaadâ kusaqitte elle faxximtannal yoh ruuubak yolluk abeh yan cattiimiyahah kulsa le gadda kaah gacsa.
+	</span>
+	</div>
+	
+	</div>
+  </div>
+  
+	<!--team-1-->
+	
+	<!--team-2-->
+	<div class="col-lg-4">
+	<div class="our-team-main">
+	
+	<div class="team-front">
+	<img src="../Amharic/img/saal.jpg" style="height: 100px;" class="img-fluid" />
+	<h3>Casan Saqal</h3>
+	<p>Software Developer</p>
+	</div>
+	
+	<div class="team-back">
+	<span>
+    Yi kataysaay, toobokoyta Casan Saqal A web hayya heeek lakal anu innih duude waak suge caddol axcih "backend" kak iyyan taamal yoo cateemih gadda kaah gacsa.
+	</span>
+	</div>
+	
+	</div>
+	</div>
+	<!--team-2-->
+	
+	
+	</div>
+	</div>
+<!--footer-->
+<hr>
+<div class="card text-center bg-info" style="font-family: 'Libre Baskerville', serif !important; text-align: center; margin-top: 10%;">
+  <div class="card-header">
+    ©2020 Afar culture | All Rights Reserved
+  </div>
+  
+  <div class="card-footer text-white">
+    by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
+  </div>
+</div>
+</div>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!--Navbar-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

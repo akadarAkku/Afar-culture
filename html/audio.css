@@ -8,8 +8,15 @@
   }
 
   .audio-section{
-    margin-top: -6%;
+    margin-top: -7%;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .audio-section {
+      margin-top: -2%;
+      width: 70%;
+    }
   }
   
   #myBar {
@@ -67,14 +74,14 @@
     border-radius: 15px;
     width: 420px;
     padding: 10px;
-    background-color: #373737;
+    background-color: #073b4c;
     margin:auto;
     margin-top: 100px;
   }
   
   .playlist-track-ctn{
     display: flex;
-    background-color: #464646;
+    background-color: #073b4c;
     margin-top: 3px;
     border-radius: 5px;
     cursor: pointer;
@@ -100,7 +107,7 @@
      padding-bottom: 20px;
   }
   .active-track{
-    background: #4d4d4d;
+    background: #9a8c98;
     color: #ffc266 !important;
     font-weight: bold;
     

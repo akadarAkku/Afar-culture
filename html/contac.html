@@ -3,21 +3,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Qafar dorro/ Qadar</title>
+    <title>Qafar | Qaadâ</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
-
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="audio.css">
+<link rel="stylesheet" href="contact.css">
   </head>
 <body>
-  <!--Navbar-->
+<!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Qafar | Qaadâ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,10 +55,7 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="./About.html">Nee wagsisaak</a>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-white" href="./contac.html">Neh uktuba</a>
-        </li>
+      
 
         <li class="nav-item">
           <a class="nav-link text-white" href="./Gaalisare.html">Gaali saare</a>
@@ -68,70 +66,53 @@
     </ul>
 </nav>
 
-<!--Audio page goes here-->
-<div class="audio-section">
-<audio id="myAudio" ontimeupdate="onTimeUpdate()">
-  <!-- <source src="audio.ogg" type="audio/ogg"> -->
-  <source id="source-audio" src="" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
-<div class="player-ctn">
-  <div class="infos-ctn">
-    <div class="timer">00:00</div>
-    <div class="title"></div>
-    <div class="duration">00:00</div>
-  </div>
-  <div id="myProgress">
-    <div id="myBar"></div>
-  </div>
-  <div class="btn-ctn">
-     <div class="btn-action first-btn" onclick="previous()">
-        <div id="btn-faws-back">
-          <i class='fas fa-step-backward'></i>
-        </div>
-     </div>
-     <div class="btn-action" onclick="rewind()">
-        <div id="btn-faws-rewind">
-          <i class='fas fa-backward'></i>
-        </div>
-     </div>
-     <div class="btn-action" onclick="toggleAudio()">
-        <div id="btn-faws-play-pause">
-          <i class='fas fa-play' id="icon-play"></i>
-          <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
-        </div>
-     </div>
-     <div class="btn-play" onclick="forward()">
-        <div id="btn-faws-forward">
-          <i class='fas fa-forward'></i>
-        </div>
-     </div>
-     <div class="btn-action" onclick="next()">
-        <div id="btn-faws-next">
-          <i class='fas fa-step-forward'></i>
-        </div>
-     </div>
-     <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
-        <div id="btn-faws-volume">
-          <i id="icon-vol-up" class='fas fa-volume-up'></i>
-          <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
-        </div>
-     </div>
-  </div>
-  <div class="playlist-ctn"></div>
-</div>
+<!--Contact form-->
+<div class="d-flex p-2 bd-highlight" style="margin-left: 30% !important;"> Email 1:  <span style="color: blue; margin-left: 2%;"> cntact.afar-culture@gmail.com</span></div>
+<hr>
+<div class="d-flex p-2 bd-highlight" style="margin-left: 30% !important;"> Email 2:  <span style="color: blue; margin-left: 2%;"> akader.akku121@gmail.com</span></div>
+
+<hr>
+<div class="d-flex p-2 bd-highlight" style="margin-left: 30% !important;"> Mobile:  <span style="color: blue; margin-left: 2%;"> 0032466464617</span></div>
+
+<!--Welcome-->
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1  style="margin-top: -20%;">Arcibay Samma Xica</h1>        
+            <h3>Welcome!</h3>
+        </hgroup>
+     
+      </div>
+    </div>
+  </div> 
 </div>
 
 <!--footer-->
 <hr>
-<div class="card text-center bg-info" style="font-family: 'Libre Baskerville', serif !important; text-align: center; margin-top: 10%;" >
+<div class="footer">
+<div class="card text-center bg-info" style="font-family: 'Libre Baskerville', serif !important; text-align: center; margin-top: 40%; width: 100%;" >
   <div class="card-header">
     ©2020 Qafar | Qaadâ All Rights Reserved
   </div>
   <div class="card-footer text-white">
     by <a href="https://www.facebook.com/akkuibnafarAkadar" class="pragraph text-body">Akader Ibrahim/ Akku</a> 
   </div>
+</div>
 </div>
 <!---home div-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
@@ -141,6 +122,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="audio.js"></script>
 </body>
 </html>

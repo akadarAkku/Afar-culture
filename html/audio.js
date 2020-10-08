@@ -149,12 +149,7 @@ function createTrackItem(index,name,duration){
 		duration:"10:33"
 	  },
 
-	  {
-		name:"Casan Pilote: Duquurah abbah milaagu",
-		file:"./audio/HASSAN PILOTE GADADUQUURAH ABBAH MILAAGU.mp3",
-		duration:"24:06"
-	  },
-
+	
 
 	  
 	  

@@ -1,159 +1,142 @@
-*{
-	margin:0;
-	padding:0;
-	border:none;
-	outline:none;
+
+/* CSS Document */
+
+.social-icons-ql li{
+    list-style:none;
+    float:left;
+    width:40px;
+    height:40px;
+    line-height:45px;
+    background:#000;
+    text-align:center;
+    margin:10px 5px;
 }
 
-body{
-	font-family:Arial;
-	font-size:13px;
-	line-height:1.5em;
-	color:#fff;
-	background: #78284a; /* Old browsers */
-	background: -moz-linear-gradient(left, #78284a 0%, #6d8a9f 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#78284a), color-stop(100%,#6d8a9f)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* IE10+ */
-	background: linear-gradient(to right, #78284a 0%,#6d8a9f 100%); /* W3C */
+.social-icons-ql li:nth-child(1){
+    width:50px;
+    height:50px;
+    line-height:57px;	   
+    margin:5px 5px;
+    background:#34558E;
 }
 
-.clearfix{
-	clear:both;
+.social-icons-ql li:nth-child(1) i{
+    font-size:25px;
+    
+}
+.social-icons-ql li:nth-child(2) {
+background:#25B8E6; 
 }
 
-#container{
-	width:330px;
-	min-height:400px;
-	background:#333;
-	overflow:auto;
-	margin:20px auto;
-	border-radius:10px;
-	box-shadow:0 10px 8px -8px #333;
+.social-icons-ql li:nth-child(3) {
+background:rgba(0, 122, 181, 1);
+}
+.social-icons-ql li:nth-child(4) {
+background:#DC4A38;
+}
+.social-icons-ql li:nth-child(5) {
+background:#CC2028;
 }
 
-#audio-image{
-	position:relative;
-	overflow:hidden;
-	height:200px;
-	margin-bottom:15px;
+.social-icons-ql li:nth-child(6) {
+background:#E05929;
+}
+.social-icons-ql li:nth-child(7) {
+background:#EB4924;
 }
 
-#audio-image .cover{
-	width:100%;
+
+
+.social-icons-ql li i{
+    color:#fff;
+    font-size:20px;
 }
 
-#audio-info{
-	text-align:center;
-}
 
-#audio-info .artist{
-	font-weight:bold;
-}
+/*especial thanks*/
+ /*especial thanks*/
 
-input#volume{
-	width:95%;
-	margin-left:2%;
-	-webkit-appearance:none !important;
-	background:#ccc;
-	height:1px;
-	margin-bottom:20px;
-}
-input#volume::-webkit-slider-thumb{
-	-webkit-appearance:none !important;
-	background:url(../images/knob.png) no-repeat;
-	height:12px;
-	width:12px;
-}
 
-#buttons{
-	width:90%;
-	display:block;
-	margin:15px auto;
-	margin-left:23px;
-	overflow:auto;
-}
+ h1
+ {
+     color:#fff;
+     margin:40px 0 60px 0;
+     font-weight:300;
+ }
+ 
+ .our-team-main
+ {
+     width:100%;
+     height:auto;
+     border-bottom:5px #323233 solid;
+     background:#fff;
+     text-align:center;
+     border-radius:10px;
+     overflow:hidden;
+     position:relative;
+     transition:0.5s;
+     margin-bottom:28px;
+ }
+ 
+ 
+ .our-team-main img
+ {
+     border-radius:50%;
+     margin-bottom:20px;
+     width: 90px;
+ }
+ 
+ .our-team-main h3
+ {
+     font-size:20px;
+     font-weight:700;
+ }
+ 
+ .our-team-main p
+ {
+     margin-bottom:0;
+ }
+ 
+ .team-back
+ {
+     width:100%;
+     height:auto;
+     position:absolute;
+     top:0;
+     left:0;
+     padding:5px 15px 0 15px;
+     text-align:left;
+     background:#fff;
+     
+ }
+ 
+ .team-front
+ {
+     width:100%;
+     height:auto;
+     position:relative;
+     z-index:10;
+     background:#fff;
+     padding:15px;
+     bottom:0px;
+     transition: all 0.5s ease;
+ }
+ 
+ .our-team-main:hover .team-front
+ {
+     bottom:-200px;
+     transition: all 0.5s ease;
+ }
+ 
+ .our-team-main:hover
+ {
+     border-color:#777;
+     transition:0.5s;
+ }
+ 
+ /*our-team-main*/
+ 
 
-button#play{
-	width:70px;
-	height:70px;
-	background:url(../images/play.png) no-repeat;
-	float:left;
-	margin-left:-2px;
-}
-
-button#pause{
-	width:70px;
-	height:70px;
-	background:url(../images/pause.png) no-repeat;
-	float:left;
-	margin-left:-2px;
-}
-
-button#stop{
-	width:70px;
-	height:70px;
-	background:url(../images/stop.png) no-repeat;
-	float:left;
-	margin-left:3px;
-}
-
-button#prev{
-	width:70px;
-	height:70px;
-	background:url(../images/prev.png) no-repeat;
-	float:left;
-	margin-top:15px;
-}
-
-button#next{
-	width:70px;
-	height:70px;
-	background:url(../images/next.png) no-repeat;
-	float:right;
-	margin-top:15px;
-}
-
-#tracker{
-	position:relative;
-	width:100%;
-}
-
-#progress-bar{
-	width:80%;
-	margin-left:2%;
-	margin-bottom:20px;
-	margin-top:9px;
-	height:10px;
-	background:url(../images/progress_bg.png) no-repeat;
-	float:left;
-}
-
-#progress{
-	background:url(../images/progress.png) no-repeat;
-	height:10px;
-	display:inline-block;
-}
-
-#duration{
-	position:absolute;
-	top:0;
-	right:10px;
-	padding: 4px 8px;
-	background:#000;
-	border-radius:5px;
-}
-
-#playlist{
-	list-style:none;
-}
-#playlist li{
-	cursor:pointer;
-	margin:5px;
-}
-#playlist li.active{
-	font-weight:bold;
-	padding:3px;
-	background:#666;
-}
+ /**/
+ 
+    
