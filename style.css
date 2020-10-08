@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    top: -6%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.img-content img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #530473;
+    opacity: .8;
+    z-index: 999;
+    height: 100%;
+}
+
+.ban-btn {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-green {
+    background-color: #4CAF50;
+}
+
+html, body {margin:0; padding: 0; width: 100%;}
+#promo-notifications{
+	background: #F4A8BE;
+	font-size: 18px;
+  width: 100%;
+  font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+
+#promo-notifications ul{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+#promo-notifications li{
+	width: 980px;
+	line-height: 35px;
+  height: 35px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	text-align: center;
+	list-style: none;
+}
