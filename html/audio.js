@@ -147,7 +147,15 @@ function createTrackItem(index,name,duration){
 		name:"Casan Pilote: Duquurah abbah milaagu",
 		file:"./audio/HASSAN PILOTE GADADUQUURAH ABBAH MILAAGU.mp3",
 		duration:"10:33"
-	  },
+    },
+
+    {
+      name:"TU KALLACIL MAGEYTIMTAK BAAHA GICLO",
+      file:"./audio/HASSAN PILOTE - TU KALLACIL MAGEYTIMTAK BAAHA GICLO.mp3",
+      duration:"02:20"
+      },
+    
+    
 
 	
 
