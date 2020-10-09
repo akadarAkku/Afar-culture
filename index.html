@@ -26,8 +26,8 @@
     <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Afar Culture</a>
     <div id="promo-notifications">
         <ul>  
-        <li>"Arcibaay Samma xixa!"!</li>
-        <li>"እንኳን ደህና መጡ"!</li>
+        <li>"Welcome"</li>
+        <li>"እንኳን ደህና መጡ"</li>
       </ul>
     </div>  
     
@@ -41,11 +41,11 @@
 
 <div class="image-wrap">
     <div class="img-content">
-        <img src="./assets/qaada.jpg" alt="">
+        <img src="./assets/qaada.jpg" alt="afar-culral image">
     </div>
     <div class="overlay"></div>
 </div>
-<div class="banner-content">
+<div class="banner-content" style="margin-top: -7%;">
     <h1>ahaak gubal af doorita</h1>
     <h1>እባከዎ ቋንቋን ይምረጡ</h1>
     <div class="banner-btn">
@@ -58,7 +58,7 @@
     jQuery(document).ready(function($) {
   var promoticker = function() {
     var window_width = window.innerWidth;
-    var speed = 12 * window_width;
+    var speed = 16 * window_width;
     $('#promo-notifications li:first').animate( {left: '-980px'}, speed, 'linear', function() {
       $(this).detach().appendTo('#promo-notifications ul').css('left', "100%");
       promoticker();
