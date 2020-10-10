@@ -3,9 +3,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Afar Culture</title>
-    <link rel="icon" href="./assets/gile.png" type="image/x-icon" />
-    
+    <title>የአፋር ባሕል</title>
+    <link rel="icon" href="../assets/gile.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
@@ -14,9 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!--Navbar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;amp;subset=cyrillic">
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css">
-<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 <link rel="stylesheet" href="style.css">
@@ -24,52 +20,125 @@
 <body>
 <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">Afar Culture</a>
-    <div id="promo-notifications">
-        <ul>  
-        <li>"Welcome"</li>
-        <li>"እንኳን ደህና መጡ"</li>
+    <a class="navbar-brand text-warning" style="font-size: 28px;" href="./index.html">የአፋር ባሕል</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <!--Language-->
+     <div id="lang_sel_list" class="lang_sel_list_horizontal">
+      <ul>
+      <li class="icl-en" style="list-style: none;">
+      <a class="lang_sel_sel"  href="../html/index.html">Qafar Af</a>
+      </li>
+      <li class="icl-tt" style="list-style: none;">
+      <a class="lang_sel_other" href="../Amharic/index.html"> አማረኛ </a>
+      </li>
       </ul>
-    </div>  
-    
+      </div>
+  
 <!--Nav links-->
     <div class="collapse navbar-collapse" id="navbarText">
-   
+      <ul class="navbar-nav ml-auto" style="margin-right: 16% !important;">
+        <li class="nav-item active" >
+          <a class="nav-link text-white" href="./index.html">መነሻ ገጽ <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../Amharic/values.html">የአፋር ባህላዊ እሴቶች</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../Amharic/Madqa-amharic.html">የአፋር ባህላዊ ህግ /ማድዓ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./about.html">ስለእኛ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./contact.html">ያገኙን</a>
+        </li>
+      </ul>
     </div>
   </nav>
     </ul>
 </nav>
 
-<div class="image-wrap">
-    <div class="img-content">
-        <img src="./assets/qaada.jpg" alt="afar-culral image">
-    </div>
-    <div class="overlay"></div>
-</div>
-<div class="banner-content" style="margin-top: -7%;">
-    <h1>ahaak gubal af doorita</h1>
-    <h1>እባከዎ ቋንቋን ይምረጡ</h1>
-    <div class="banner-btn">
-        <a href="./html/index.html" class="ban-btn btn-red" style="list-style: none; text-decoration: none;">Qafar Af</a>
-        <a href="./Amharic/index.html" class="ban-btn btn-green" style="list-style: none; text-decoration: none;">አማረኛ</a>
+<!--home page-->
+<section class="details-card">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                    <a href="./values.html">  <img src="../assets/mablo.jpg" alt="Afar-cultre image" style="height: 200px;">
+                      <span><h1 class="h3" style="margin-left: 20% !important; color: #000;">የተለያዩ የአፋር ባህላዊ እሴቶች </h1></span></a>
+                  </div>
+                  <div class="card-desc">
+                      <p>እዚህ ላይ የተለያዩ የአፋር ህዝብ ባህል እሴቶች ያገኛሉ።</p>
+                          <a href="./values.html" class="btn-card" style="color: #00509d !important;">ለተጨማሪ እዚህ ይጫኑ</a>   
+                  </div>
+                   <!--Facebook Share button-->
+                   <div id="fb-share-button">
+                    <svg viewBox="0 0 12 12" preserveAspectRatio="xMidYMid meet">
+                        <path class="svg-icon-path" d="M9.1,0.1V2H8C7.6,2,7.3,2.1,7.1,2.3C7,2.4,6.9,2.7,6.9,3v1.4H9L8.8,6.5H6.9V12H4.7V6.5H2.9V4.4h1.8V2.8 c0-0.9,0.3-1.6,0.7-2.1C6,0.2,6.6,0,7.5,0C8.2,0,8.7,0,9.1,0.1z"></path>
+                    </svg>
+                    <span>ያጋሩ</span>
+                </div><!--Facebook Share button END-->
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                 <a href="./teret.html"><img src="../assets/sayo.png" alt="afar girls photo" style="height: 200px;"></a> 
 
-    </div>
-</div>
-<script>
-    jQuery(document).ready(function($) {
-  var promoticker = function() {
-    var window_width = window.innerWidth;
-    var speed = 16 * window_width;
-    $('#promo-notifications li:first').animate( {left: '-980px'}, speed, 'linear', function() {
-      $(this).detach().appendTo('#promo-notifications ul').css('left', "100%");
-      promoticker();
-    });
-  };
-  if ($("#promo-notifications li").length > 1) {
-    promoticker();
-  }
-});
-</script>
+                      <span><h1 style="margin-left: 20% !important; color: #000;">የአፋር ተረትና ምሳሌያዊ አነጋገሮች</h1></span>
+                  </div>
+                  <div class="card-desc">
+                      <p style="margin-left: 3%;">ከአፋረኛ ወደ አማረኛ የተተረጎመ ተረትና ምሳሌዎችን ለማየት እዚህ ላይ ይጫኑ</p>
+                          <a href="./teret.html" class="btn-card" style="color: #00509d !important;">ለተጨማሪ እዚህ ይጫኑ</a></a> 
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                    <a href="./cultural-game.html">  <img src="../assets/gile.png" alt="Afar nife" style="height: 200px;"></a>
+                      <span><h1 style="margin-left: 3%;">የተለያዩ የአፋር ባህላዊ ጨዋታዎች</h1></span>
+                  </div>
+                  <div class="card-desc">
+                      <p>የአፋር ህዝብ ተዘርዝረው የማይልቁ የባህል ጨዋታዎችና ጨፈራዎች አሏቸው።
+                        ከእነዚህም የተወሰኑ በአፋር ክልላዊ መንግስት የባህል ቱርዝም ተዘጋጅቶ ከቀረበው በትንሹም ቢሆን እዚህ ይገኛል።
+                        ወደ ፊትም ቀስ በቀስ እየጨመርን እንሄዳለን።
+                      </p>
+                          <a href="./cultural-game.html" class="btn-card" style="color: #00509d !important;">ለተጨማሪ እዚህ ይጫኑ</a>   
+                  </div>
+            
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- details card section starts from here -->
+
+<!--Sidbar-->
+<hr>
+<p class="h1" style="margin-left: 2%; color: #00509d;">የተለያዩ የአፋረኛ ዘፈን ቻናሎችና ድህረገፆች</p>
+<div class="container-fluid" style="padding-top: 2%;">
+  
+  <div class="row">    
+      <div id="admin-sidebar" class="col-md-2 p-x-0 p-y-3">
+          <ul class="sidenav admin-sidenav list-unstyled">
+              <li><a href="https://www.youtube.com/user/youssouf1030" style="color: #ffba08;">EWALI TV Myo</a></li>
+              <li><a href="http://auth.waanisa.com/" style="color: #ffba08;">Waanisa</a></li>
+              <li><a href="https://www.facebook.com/hassanchehemali/" style="color: #ffba08;">Hassan Chehem</a></li>
+              <li><a href="https://www.youtube.com/user/tadjourah5" style="color: #ffba08;">Studio Andeeda</a></li>
+              <li><a href="https://www.facebook.com/AFLEYTA/" style="color: #ffba08;">Afleytà Studio</a></li>
+              <li><a href="https://www.feera.net/" style="color: #ffffff;">Feera net</a></li>                  
+          </ul>
+      </div> <!-- /#admin-sidebar -->
+     
+  </div> <!-- /.row -->
+</div> <!-- /.container-fluid -->
+<hr>
 
 <!--footer-->
 <hr>
