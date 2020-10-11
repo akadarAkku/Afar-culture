@@ -340,7 +340,7 @@ body {
 /*video*/
 @media only screen and (min-width: 768px) {
  #afaraf{
-    margin-top: -28%;
+    margin-top: -22%;
     margin-left: 30%;
     width: 50%;
     height: 330px;
@@ -349,8 +349,9 @@ body {
 }
 
 
-
-@media only screen and (max-width: 600px) {
-  .hedading {
+@media only screen and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  #fouter{
     display: none;
+  }
 }
