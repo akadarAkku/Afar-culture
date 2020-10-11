@@ -268,3 +268,14 @@ padding: 0 3px
     position: absolute;
     left: 0;
 }
+
+/*sayyo*/
+@media only screen and (min-width: 768px) {
+  #sayyo{
+    margin-top: -28%;
+    margin-left: 30%;
+    width: 60%;
+    height: 330px;
+  }
+
+}
