@@ -304,6 +304,7 @@ and (max-device-width : 1024px)  {
     margin-top: 45%;
   }
 }
+
 /*Sidbar*/
 
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
@@ -406,3 +407,15 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{ margin:0px; padding:0px;}
   margin-left: 16%;
  }
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  
+  #afar{
+   
+    margin-left: 60%;
+    margin-top: -35%;
+  }
+}
+
