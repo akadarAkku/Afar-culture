@@ -3,342 +3,278 @@
 /*home page cards*/
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  background: #dee2e6;
-  margin: 0;
-  padding: 0;
-}
-
-.headline {
-  margin-left: 20%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e5e5e5;
-  box-shadow: 5px 5px 15px 5px #000000;
-  padding: 26px;
-  margin-top: 16%;
-}
-
-.swiper-container {
-  height: calc(100vh - 120px);
-  margin: 60px;
-}
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.slide-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-}
-img{
-  display:block;
-  width:100%;
-  height:auto;
-}
-.copy {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  color: white;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-a {
-  color: white;
-}
-
-/*home page div*/
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
-
-/********************************/
-/*       Fade Bs-carousel       */
-/********************************/
-.fade-carousel {
-  position: relative;
-  height: 100vh;
-}
-.fade-carousel .carousel-inner .item {
-  height: 100vh;
-}
-.fade-carousel .carousel-indicators > li {
-  margin: 0 2px;
-  background-color: #f39c12;
-  border-color: #f39c12;
-  opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-width: 10px;
-height: 10px;
-opacity: 1;
-}
-
-/********************************/
-/*          Hero Headers        */
-/********************************/
-.hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-    -webkit-transform: translate3d(-50%,-50%,0);
-       -moz-transform: translate3d(-50%,-50%,0);
-        -ms-transform: translate3d(-50%,-50%,0);
-         -o-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-  font-size: 6em;    
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.fade-carousel .carousel-inner .item .hero {
-  opacity: 0;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s; 
-}
-.fade-carousel .carousel-inner .item.active .hero {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: #dee2e6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headline {
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 26px;
+    margin-top: 16%;
+  }
+  
+  .swiper-container {
+    height: calc(100vh - 120px);
+    margin: 60px;
+  }
+  
+  .swiper-slide {
+    overflow: hidden;
+  }
+  
+  .slide-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .copy {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  a {
+    color: white;
+  }
+  
+  /*home page div*/
+  /*
+  Fade content bs-carousel with hero headers
+  Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+  Image credits: unsplash.com
+  */
+  
+  /********************************/
+  /*       Fade Bs-carousel       */
+  /********************************/
+  .fade-carousel {
+    position: relative;
+    height: 100vh;
+  }
+  .fade-carousel .carousel-inner .item {
+    height: 100vh;
+  }
+  .fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+  }
+  .fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
   opacity: 1;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s;    
-}
+  }
+  
+  /********************************/
+  /*          Hero Headers        */
+  /********************************/
+  .hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+  }
+  .hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+  }
+  .fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+  }
+  
+  /********************************/
+  /*            Overlay           */
+  /********************************/
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+  }
+  
+  /********************************/
+  /*          Custom Buttons      */
+  /********************************/
+  .btn.btn-lg {padding: 10px 40px;}
+  .btn.btn-hero,
+  .btn.btn-hero:hover,
+  .btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+  }
+  
+  /********************************/
+  /*       Slides backgrounds     */
+  /********************************/
+  .fade-carousel .slides .slide-1, 
+  .fade-carousel .slides .slide-2,
+  .fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+  .fade-carousel .slides .slide-1 {
+  background-image: url(../assets/qaada.jpg); 
+  }
+  .fade-carousel .slides .slide-2 {
+  background-image: url(../assets/la);
+  }
+  .fade-carousel .slides .slide-3 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+  }
+  
+  /********************************/
+  /*          Media Queries       */
+  /********************************/
+  @media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+  }
+  @media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+  }
+  
+  /*Language selector*/
+  .language { position: absolute; top: 5px; right: 5px; padding: 20px; }
+  .english { display: inline; }
+  .spanish { display: none; }
+  
+  .navigation { margin: 50px; }
+  .navigation ul li { margin: 0px 10px; }
+  
+  .footer { padding-top: 100px;  margin: 50px; }
+  
+  /*language*/
+  .navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+  }
 
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
-}
-
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-  color: #f5f5f5;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
-  outline: none;
-  margin: 20px auto;
-}
-
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
-.fade-carousel .slides .slide-1, 
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-height: 100vh;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-}
-.fade-carousel .slides .slide-1 {
-background-image: url(../assets/qaada.jpg); 
-}
-.fade-carousel .slides .slide-2 {
-background-image: url(../assets/la);
-}
-.fade-carousel .slides .slide-3 {
-background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
-}
-
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-  .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-  .hero h1 { font-size: 4em; }    
-}
-
-/*Language selector*/
-.language { position: absolute; top: 5px; right: 5px; padding: 20px; }
-.english { display: inline; }
-.spanish { display: none; }
-
-.navigation { margin: 50px; }
-.navigation ul li { margin: 0px 10px; }
-
-.footer { padding-top: 100px;  margin: 50px; }
-
-/*language*/
-.navbar-nav > li{
-  padding-left:20px;
-  padding-right:20px;
-}
-
- /*share facebookk*/
+   /*share facebookk*/
 #fb-share-button {
-background: #3b5998;
-border-radius: 3px;
-font-weight: 600;
-padding: 5px 8px;
-display: inline-block;
-position: static;
-margin-top: 3%;
+  background: #3b5998;
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 5px 8px;
+  display: inline-block;
+  position: static;
+  margin-top: 3%;
 }
 
 #fb-share-button:hover {
-cursor: pointer;
-background: #213A6F
+  cursor: pointer;
+  background: #213A6F
 }
 
 #fb-share-button svg {
-width: 18px;
-fill: white;
-vertical-align: middle;
-border-radius: 2px
+  width: 18px;
+  fill: white;
+  vertical-align: middle;
+  border-radius: 2px
 }
 
 #fb-share-button span {
-vertical-align: middle;
-color: white;
-font-size: 14px;
-padding: 0 3px
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+  padding: 0 3px
 }
 
 
-/*sidebar*/
-@media only screen and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-  #fouter{
-    display: none;
-  }
+/*Sidebar*/
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400';
+
+
+body {
+    font-family: 'Raleway:300', sans-serif
+}
+    
+.admin-sidenav {
+    width: auto;
+	height: auto;
+	margin-left: 0px; 
+}
+.admin-sidenav a {
+	text-decoration: none; 
+}
+.admin-sidenav li {
+	text-align: justify;
+	padding: .5rem;
+	padding-left: 1rem;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	background-color: #000;
+	border: 1px solid #333; 
+}
+.admin-sidenav li a {
+	color: #fff; 
 }
 
-/*New sidebar*/
-
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900);
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.admin-sidenav li a:active {
+	border-color: #02d3f5; 
 }
 
-body{
-  background-color: #EEE;
-}
-.side-menu{
-  width: 300px;
-  height: 100%;
-  padding: 50px 0;
-  box-sizing: border-box;
-  background-image: linear-gradient(0deg,#10002b,#10002b);
-  display: flex;
-  flex-flow: column nowrap;
-  box-shadow: 5px 0px 10px rgba(17, 26, 41, 0.6);
-}
-.side-menu form{
-  display: flex;
-  margin: 0 10px 50px;
-  border-radius: 100px;
-  border: 1px solid #fff;
-}
-.side-menu form input,
-.side-menu form button{
-  background-color: transparent;
-  color: #fff;
-  border:none;
-  padding:5px 10px;
-}
-.side-menu form input{
-  width: 230px;
-}
-::placeholder {
-   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1; /* Firefox */
-}
-.side-menu form button{
-  width: 50px;
-}
-.side-menu form input:focus::placeholder{
-  color: #ccc;
-}
-.side-menu form input:focus,
-.side-menu form button:focus{
-  outline: none;
-}
-nav a{
-  display: block ;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  font-family: 'Noto Sans TC',sans-serif;
-}
-nav a+a::before{
-   content: '';
-   position: absolute;
-   border-top: 1px solid #fff;
-   left: 10px;
-   right: 10px;
-   top: 0;
-}
-/* Method 1 */
-nav a .fas{
-   margin-right: -1.1em;
-   transform: scale(0);
-   transition: .5s;
-}
-nav a:hover .fas{
-  margin-right: 0.3em;
-   transform: scale(1);
+.admin-sidenav li:hover {
+	border-radius: 0 .5rem .5rem 0;
+	border-color: #02d3f5;
+	-webkit-transform: translate(30px, 0px);
+	transform: translate(30px, 0px);
+	background: -webkit-linear-gradient(left, #006a7b, #002340);
+	background: linear-gradient(to right, #006a7b, #002340); 
 }
 
-@media only screen and (max-width: 600px) {
-  #afaraf {
-   margin-top: 6%;
-   margin-left: 2%;
-   width: 100%;
-  }
-
-  #sidebar1{
-    margin-left: 7%;
-  }
+.admin-sidenav li:active {
+	border-color: #02d3f5; 
 }
-
-/*Qafar af media*/
-@media only screen and (min-width: 768px) {
-  #afaraf{
-     margin-top: -30%;
-     margin-left: 50%;
-     width: 100%;
-     height: 320px;
-   }
- 
- }
