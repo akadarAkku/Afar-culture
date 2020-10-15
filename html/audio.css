@@ -5,28 +5,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
 
-html {
-  height: 100%;
-  
- 
-}
-
-#music{
-  -webkit-box-shadow: -15px 7px 37px -17px rgba(120,89,120,1);
-  -moz-box-shadow: -15px 7px 37px -17px rgba(120,89,120,1);
-  box-shadow: -15px 7px 37px -17px rgba(120,89,120,1);
-}
-
-body {
-  min-height: 100%;
-  background-color: #999;
-  
-}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 1rem;
