@@ -33,4 +33,4 @@ jQuery(document).ready(function($) {
   });
 });
 
-//youtube vidieos
+//photo gallery
