@@ -440,3 +440,30 @@ ol {
   -moz-box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 4px 15px 0px rgba(0, 0, 0, 0.75);
 }
+
+/*Ipad & ipad pro*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  #afar {
+    margin-left: 70%;
+    margin-top: -32%;
+  }
+
+  #youtube {
+    margin-left: 35%;
+    margin-top: -23%;
+  }
+}
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+  #afar {
+    margin-left: 75%;
+    margin-top: -24%;
+  }
+  #chanels {
+    margin-top: 30%;
+  }
+
+  #youtube {
+    margin-left: 35%;
+    width: 50%;
+  }
+}
